@@ -12,6 +12,14 @@ function add_script() {
 add_action( 'wp_enqueue_scripts', 'add_script' );
 
 
+function custom_register_nav_menu(){
+      register_nav_menus( array(
+          'primary_menu' => 'Menu principal',
+      ) );
+  }
+  add_action( 'after_setup_theme', 'custom_register_nav_menu', 0 );
+
+
 
 
 
