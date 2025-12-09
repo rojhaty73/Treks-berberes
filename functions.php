@@ -21,5 +21,17 @@ function custom_register_nav_menu(){
 
 
 
+  function dd($vars) {
+    
+    echo '<pre>';
+    var_dump($vars);
+    echo '</pre>';
+    die('END');
+
+
+
+
+  }
+
 
 
